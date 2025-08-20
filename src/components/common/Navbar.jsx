@@ -37,10 +37,14 @@ function Navbar() {
             <NavLink
               to="/features"
               className={({ isActive }) =>
-                `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                  isDark ? "text-white" : "text-gray-900"
-                } transition-colors ${
-                  isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                  isActive
+                    ? isDark
+                      ? "text-blue-400 bg-blue-900/20 border-b-2 border-blue-400"
+                      : "text-blue-600 bg-blue-50 border-b-2 border-blue-600"
+                    : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                        isDark ? "text-white" : "text-gray-900"
+                      } hover:bg-gray-100 dark:hover:bg-gray-800`
                 }`
               }
             >
@@ -49,10 +53,14 @@ function Navbar() {
             <NavLink
               to="/pricing"
               className={({ isActive }) =>
-                `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                  isDark ? "text-white" : "text-gray-900"
-                } transition-colors ${
-                  isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                  isActive
+                    ? isDark
+                      ? "text-blue-400 bg-blue-900/20 border-b-2 border-blue-400"
+                      : "text-blue-600 bg-blue-50 border-b-2 border-blue-600"
+                    : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                        isDark ? "text-white" : "text-gray-900"
+                      } hover:bg-gray-100 dark:hover:bg-gray-800`
                 }`
               }
             >
@@ -61,10 +69,14 @@ function Navbar() {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                  isDark ? "text-white" : "text-gray-900"
-                } transition-colors ${
-                  isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                  isActive
+                    ? isDark
+                      ? "text-blue-400 bg-blue-900/20 border-b-2 border-blue-400"
+                      : "text-blue-600 bg-blue-50 border-b-2 border-blue-600"
+                    : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                        isDark ? "text-white" : "text-gray-900"
+                      } hover:bg-gray-100 dark:hover:bg-gray-800`
                 }`
               }
             >
@@ -73,10 +85,14 @@ function Navbar() {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                  isDark ? "text-white" : "text-gray-900"
-                } transition-colors ${
-                  isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                  isActive
+                    ? isDark
+                      ? "text-blue-400 bg-blue-900/20 border-b-2 border-blue-400"
+                      : "text-blue-600 bg-blue-50 border-b-2 border-blue-600"
+                    : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                        isDark ? "text-white" : "text-gray-900"
+                      } hover:bg-gray-100 dark:hover:bg-gray-800`
                 }`
               }
             >
@@ -130,10 +146,14 @@ function Navbar() {
               <NavLink
                 to="/features"
                 className={({ isActive }) =>
-                  `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                    isDark ? "text-white" : "text-gray-900"
-                  } transition-colors ${
-                    isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                  `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                    isActive
+                      ? isDark
+                        ? "text-blue-400 bg-blue-900/20 border-l-4 border-blue-400"
+                        : "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
+                      : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                          isDark ? "text-white" : "text-gray-900"
+                        } hover:bg-gray-100 dark:hover:bg-gray-800`
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -143,10 +163,14 @@ function Navbar() {
               <NavLink
                 to="/pricing"
                 className={({ isActive }) =>
-                  `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                    isDark ? "text-white" : "text-gray-900"
-                  } transition-colors ${
-                    isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                  `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                    isActive
+                      ? isDark
+                        ? "text-blue-400 bg-blue-900/20 border-l-4 border-blue-400"
+                        : "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
+                      : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                          isDark ? "text-white" : "text-gray-900"
+                        } hover:bg-gray-100 dark:hover:bg-gray-800`
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -156,10 +180,14 @@ function Navbar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                    isDark ? "text-white" : "text-gray-900"
-                  } transition-colors ${
-                    isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                  `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                    isActive
+                      ? isDark
+                        ? "text-blue-400 bg-blue-900/20 border-l-4 border-blue-400"
+                        : "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
+                      : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                          isDark ? "text-white" : "text-gray-900"
+                        } hover:bg-gray-100 dark:hover:bg-gray-800`
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
@@ -169,10 +197,14 @@ function Navbar() {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
-                    isDark ? "text-white" : "text-gray-900"
-                  } transition-colors ${
-                    isActive ? (isDark ? "text-blue-400" : "text-blue-600") : ""
+                  `px-3 py-2 rounded-md font-medium transition-all duration-200 ${
+                    isActive
+                      ? isDark
+                        ? "text-blue-400 bg-blue-900/20 border-l-4 border-blue-400"
+                        : "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
+                      : `${isDark ? "text-gray-300" : "text-gray-600"} hover:${
+                          isDark ? "text-white" : "text-gray-900"
+                        } hover:bg-gray-100 dark:hover:bg-gray-800`
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}
