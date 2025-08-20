@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Button from "../ui/Button.jsx";
 import ThemeContext from "../../contexts/ThemeContext.jsx";
@@ -18,7 +18,10 @@ function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold">
+            <Link
+              to="/"
+              className="text-2xl font-bold hover:opacity-80 transition-opacity"
+            >
               <span
                 className={`${isDark ? "text-white" : "text-gray-900"}`}
                 style={{ fontFamily: "var(--font-sans)" }}
@@ -26,7 +29,7 @@ function Navbar() {
                 Task
               </span>
               <span className="text-blue-600">Flow</span>
-            </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
