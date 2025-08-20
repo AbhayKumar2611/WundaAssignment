@@ -1,21 +1,49 @@
-import React from 'react'
-import Button from '../components/ui/Button.jsx'
+import React, { useContext } from "react";
+import Button from "../components/ui/Button.jsx";
+import ThemeContext from "../contexts/ThemeContext.jsx";
 
 export default function Hero({
   title = "Manage your team's tasks effortlessly",
-  subtitle = 'Collaborate, track, and boost productivity with TaskFlow.',
-  primaryCta = { label: 'Start Free Trial' },
-  secondaryCta = { label: 'Learn More' },
+  subtitle = "Collaborate, track, and boost productivity with TaskFlow.",
+  primaryCta = { label: "Start Free Trial" },
+  secondaryCta = { label: "Learn More" },
 }) {
+  const { isDark } = useContext(ThemeContext);
+
   return (
-    <section className="section py-16 px-10 sm:py-20" style={{ fontFamily: 'var(--font-sans)' }}>
+    <section
+      className={`section py-16 px-10 sm:py-20 ${
+        isDark ? "bg-black" : "bg-white"
+      }`}
+      style={{ fontFamily: "var(--font-sans)" }}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div className="flex-col items-center justify-center pl-[6vw]">
-          <h1 className="text-6xl font-semibold tracking-tight text-gray-900 dark:text-white max-w-sm" style={{ fontFamily: 'var(--font-sans)' }}>{title}</h1>
-          <p className="mt-4 text-3xl font-normal text-gray-600 dark:text-gray-400 max-w-md" style={{ fontFamily: 'var(--font-sans)' }}>{subtitle}</p>
+          <h1
+            className={`text-6xl font-semibold tracking-tight ${
+              isDark ? "text-white" : "text-gray-900"
+            } max-w-sm`}
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {title}
+          </h1>
+          <p
+            className={`mt-4 text-3xl font-normal ${
+              isDark ? "text-white" : "text-gray-600"
+            } max-w-md`}
+            style={{ fontFamily: "var(--font-sans)" }}
+          >
+            {subtitle}
+          </p>
           <div className="mt-8 flex items-center gap-4">
             <Button size="lg">{primaryCta.label}</Button>
-            <Button variant="outline" size="lg">{secondaryCta.label}</Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className={`${isDark ? "text-white" : "text-gray-900"}`}
+            >
+              {secondaryCta.label}
+            </Button>
           </div>
         </div>
         <div className="relative pr-[5vw]">
@@ -34,5 +62,5 @@ export default function Hero({
         </div>
       </div>
     </section>
-  )
+  );
 }
